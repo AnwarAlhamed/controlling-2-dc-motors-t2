@@ -6,6 +6,7 @@ The circuit contains:
 - Arduino UNO.
 - Breadboard.
 - 2 DC motors.
+- H-bridge (L293D).
 - 9V battery.
 - Wires ( red= power , black= ground , yellow and green = signal).
  
