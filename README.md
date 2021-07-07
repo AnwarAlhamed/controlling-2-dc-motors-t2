@@ -7,6 +7,7 @@ The circuit contains:
 - Breadboard.
 - 2 DC motors.
 - H-bridge (L293D).
+- potentiometer.
 - 9V battery.
 - Wires ( red= power , black= ground , yellow and green = signal).
  
@@ -18,9 +19,8 @@ and the circuit was designed using tinkercad website as below:
  The circuit was programmed using the C++ language via the Tinkercad website as shown in ino file in this repository.
   #### Code Explanation:
   ```
-  //controlling 2 DC-motors
-int pot=A0 ;
-int value ;
+//controlling 2 DC-motors
+
 
 void setup()
 {
@@ -33,19 +33,28 @@ void setup()
 void loop()
 {
  // moving clockwise
+  if (analogRead(A0)>600)
+  {
   digitalWrite(7, LOW);
   digitalWrite(6, HIGH);
   digitalWrite(5, LOW);
   digitalWrite(4, HIGH);
-  delay(3000); // Wait for 3 seconds
+  }
+  
  
   //moving counterclockwise
+  if (analogRead(A0)<400)
+  {
   digitalWrite(7, HIGH);
   digitalWrite(6, LOW);
   digitalWrite(5, HIGH);
   digitalWrite(4, LOW);
-  delay(3000); // Wait for 3 seconds
+  }
   
+  digitalWrite(7,LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, LOW);
 }
 ```
  ### For simulation:
