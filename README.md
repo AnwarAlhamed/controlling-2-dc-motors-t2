@@ -12,7 +12,8 @@ The circuit contains:
  
 and the circuit was designed using tinkercad website as below:
 #### Diagram preview:
-![controlling 2 DC motors (1)](https://user-images.githubusercontent.com/86317095/124780496-52d27e80-df4b-11eb-8e88-96e9d51cd091.png)
+![controlling 2 DC motors (4)](https://user-images.githubusercontent.com/86317095/124801421-7f909100-df5f-11eb-94e3-264953019960.png)
+
 ### Programing 2 dc motors to move clockwise and counterclockwise:
  The circuit was programmed using the C++ language via the Tinkercad website as shown in ino file in this repository.
   #### Code Explanation:
